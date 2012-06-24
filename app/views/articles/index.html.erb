@@ -1,0 +1,10 @@
+<%= render 'layouts/head' %>
+<%= render 'layouts/header' %>
+<%= render 'layouts/disqus' %>
+
+<% @articles.reverse.each do |article| %>
+    <%= render 'article', :article => article %>
+<% end %>
+
+<br />
+

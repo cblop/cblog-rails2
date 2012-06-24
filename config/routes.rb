@@ -1,4 +1,16 @@
 CblogRails2::Application.routes.draw do
+
+  #resources :users
+  match 'admin' => 'admin/articles#index'
+
+  resources :articles
+
+  namespace :admin do
+      resources :articles
+  end
+
+  root to: 'articles#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

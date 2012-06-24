@@ -1,0 +1,15 @@
+<div class="block">
+<div class="post_title"><%= link_to article.title, article %>
+        <span class="tags">
+    
+        <!--
+        {% for tag in article.tags %}
+            <a href="{{ tag_path }}/{{ tag }}">{{ tag }}</a>
+            {% if not forloop.last %},&nbsp{% endif %}
+            {% endfor %}
+        -->
+    
+        </span></div>
+        <p class="date">updated <%= time_ago_in_words(article.updated_at) %> ago</p>
+        <div class="post"><%= article.content %></div>
+</div>

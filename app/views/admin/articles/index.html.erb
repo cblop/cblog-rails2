@@ -1,0 +1,32 @@
+<div id="header-dec">
+    <div id="header">
+        <div id="title">article list</div>
+        <div id="subtitle">Select 'n' edit or go <a href="/">back to the blog</a>.</div>
+    </div>
+</div>
+
+<div id="content">
+<div id="button_new">
+    <%= button_to 'New Post', new_admin_article_path, class: 'button', method: 'get' %>
+</div>
+<div class="block">
+
+<ul class="post_title">
+<% @articles.each do |article| %>
+    <% if article.published? %>
+        <li class='admin-published'>
+    <% else %>
+        <li class='admin-draft'>
+    <% end %>
+
+    <div style="float: left; width: auto;"><%= button_to 'del', [:admin, article], confirm: 'Are you sure?', method: :delete, class: 'del_button' %></div>
+    <%= link_to "#{article.created_at.strftime("%d %b %Y")} - #{article.title}", [:edit, :admin, article] %>
+    </li>
+<% end %>
+</ul>
+
+</div>
+</div>
+
+<br />
+
