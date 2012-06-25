@@ -21,5 +21,14 @@ class ArticlesController < ApplicationController
       format.json { render json: @article }
     end
   end
+  
+  def tagged_with
+    @articles = Article.by_tag(params[:tag])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @articles }
+    end
+  end
 
 end

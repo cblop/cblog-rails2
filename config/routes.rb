@@ -4,6 +4,12 @@ CblogRails2::Application.routes.draw do
   match 'admin' => 'admin/articles#index'
 
   resources :articles
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+
+  match '/tag/:tag' => 'articles#tagged_with'
 
   namespace :admin do
       resources :articles

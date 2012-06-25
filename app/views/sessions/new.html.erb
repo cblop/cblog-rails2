@@ -1,0 +1,20 @@
+<%= render 'layouts/header' %>
+
+<% provide(:title, "Sign in") %>
+<h1>Sign in</h1>
+
+<div class="content">
+    <div class="block">
+        <%= form_for(:session, url:sessions_path) do |f| %>
+
+            <%= f.label :name, class: "post_title"%>
+            <%= f.text_field :name, class: "input" %>
+
+            <%= f.label :password, class: "post_title" %>
+            <%= f.password_field :password, class: "input" %>
+
+            <%= f.submit "Sign in", class: "button" %>
+        <% end %>
+    </div>
+
+</div>

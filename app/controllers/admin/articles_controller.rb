@@ -1,4 +1,14 @@
 class Admin::ArticlesController < ApplicationController
+  before_filter :authorize
+
+  def authorize
+    if signed_in?
+        :index
+    else
+        redirect_to '/signin'
+    end
+  end
+
   def index
     @articles = Article.all
 

@@ -11,24 +11,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120623084101) do
+ActiveRecord::Schema.define(:version => 20120625104939) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
     t.text     "content"
     t.string   "slug"
     t.string   "shortUrl"
-    t.string   "tags"
     t.boolean  "published"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "users", :force => true do |t|
+  create_table "tags", :force => true do |t|
     t.string   "name"
-    t.string   "email"
+    t.integer  "post_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "article_id"
   end
+
+  add_index "tags", ["post_id"], :name => "index_tags_on_post_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "password_digest"
+    t.string   "remember_token"
+  end
+
+  add_index "users", ["name"], :name => "index_users_on_name", :unique => true
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
 end
