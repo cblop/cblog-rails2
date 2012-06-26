@@ -20424,3 +20424,2129 @@ Migrating to AddArticleIdToTags (20120625104939)
   [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120625082646')[0m
   [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120625104529')
   [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120625104823')[0m
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-25 22:02:37 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+  Rendered admin/articles/index.html.erb within layouts/application (112.3ms)
+Completed 200 OK in 800ms (Views: 516.5ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /application.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-25 22:02:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/articles/new" for 127.0.0.1 at 2012-06-26 08:50:58 +0100
+Processing by Admin::ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  Rendered admin/articles/_form.html.erb (623.5ms)
+  Rendered admin/articles/new.html.erb within layouts/application (644.3ms)
+Completed 200 OK in 804ms (Views: 694.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 08:50:59 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/articles" for 127.0.0.1 at 2012-06-26 08:51:39 +0100
+Processing by Admin::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "article"=>{"published"=>"0", "title"=>"Tag test", "content"=>"Will this add tags?", "tags"=>"there are, many, tags, in this, post", "shortUrl"=>""}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `each' for "there are, many, tags, in this, post":String):
+  app/controllers/admin/articles_controller.rb:39:in `new'
+  app/controllers/admin/articles_controller.rb:39:in `create'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.0ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.4ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+  Rendered admin/articles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 127ms (Views: 78.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:23 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/admin/articles/new" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Processing by Admin::ArticlesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  Rendered admin/articles/_form.html.erb (13.9ms)
+  Rendered admin/articles/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:25 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/articles" for 127.0.0.1 at 2012-06-26 09:02:48 +0100
+Processing by Admin::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "article"=>{"published"=>"0", "title"=>"Tag test", "content"=>"This tests adding many tags", "tag_list"=>"here, are, many, very silly, tags", "shortUrl"=>""}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'here') LIMIT 1
+  [1m[36m (4.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.2ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'here' LIMIT 1
+  [1m[36mSQL (122.8ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00], ["name", "here"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'are') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE "tags"."name" = 'are' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00], ["name", "are"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'many') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.2ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'many' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00], ["name", "many"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'very silly') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE "tags"."name" = 'very silly' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00], ["name", "very silly"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'tags') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00], ["name", "tags"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.2ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'here' AND "tags"."id" != 1) LIMIT 1
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'are' AND "tags"."id" != 2) LIMIT 1[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'many' AND "tags"."id" != 3) LIMIT 1
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'very silly' AND "tags"."id" != 4) LIMIT 1[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'tags' AND "tags"."id" != 5) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "articles" ("content", "created_at", "published", "shortUrl", "slug", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "This tests adding many tags"], ["created_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00], ["published", false], ["shortUrl", ""], ["slug", nil], ["title", "Tag test"], ["updated_at", Tue, 26 Jun 2012 08:02:49 UTC +00:00]]
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'here' AND "tags"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "tags" SET "article_id" = 7, "updated_at" = '2012-06-26 08:02:49.273040' WHERE "tags"."id" = 1[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'are' AND "tags"."id" != 2) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "tags" SET "article_id" = 7, "updated_at" = '2012-06-26 08:02:49.276501' WHERE "tags"."id" = 2[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'many' AND "tags"."id" != 3) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "tags" SET "article_id" = 7, "updated_at" = '2012-06-26 08:02:49.278491' WHERE "tags"."id" = 3[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'very silly' AND "tags"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "tags" SET "article_id" = 7, "updated_at" = '2012-06-26 08:02:49.280200' WHERE "tags"."id" = 4[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'tags' AND "tags"."id" != 5) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "tags" SET "article_id" = 7, "updated_at" = '2012-06-26 08:02:49.282145' WHERE "tags"."id" = 5[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 903ms (ActiveRecord: 144.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 105ms (Views: 102.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:49 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/articles/7/edit" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Processing by Admin::ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."article_id" = 7[0m
+  Rendered admin/articles/_form.html.erb (93.3ms)
+  Rendered admin/articles/edit.html.erb within layouts/application (94.7ms)
+Completed 200 OK in 127ms (Views: 123.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:55 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+  Rendered admin/articles/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:02:58 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-26 09:03:10 +0100
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered layouts/_head.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_disqus.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (36.8ms)
+  Rendered articles/_article.html.erb (0.7ms)
+  Rendered articles/_article.html.erb (0.5ms)
+  Rendered articles/_article.html.erb (0.5ms)
+  Rendered articles/index.html.erb within layouts/application (86.8ms)
+Completed 200 OK in 143ms (Views: 141.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:10 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:10 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:10 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:10 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:10 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/static/css/screen.css" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/static/css/screen.css"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:03:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tag/free%20culture" for 127.0.0.1 at 2012-06-26 09:03:12 +0100
+Processing by ArticlesController#tagged_with as HTML
+  Parameters: {"tag"=>"free culture"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `by_tag' for #<Class:0x007f8dc0cd1d10>):
+  app/controllers/articles_controller.rb:26:in `tagged_with'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+
+
+Started GET "/tag/here" for 127.0.0.1 at 2012-06-26 09:03:17 +0100
+Processing by ArticlesController#tagged_with as HTML
+  Parameters: {"tag"=>"here"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `by_tag' for #<Class:0x007f8dc0cd1d10>):
+  app/controllers/articles_controller.rb:26:in `tagged_with'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.1ms)
+
+
+Started GET "/tags/this" for 127.0.0.1 at 2012-06-26 09:14:48 +0100
+
+ActionController::RoutingError (No route matches [GET] "/tags/this"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/tag/this" for 127.0.0.1 at 2012-06-26 09:14:57 +0100
+Processing by ArticlesController#tagged_with as HTML
+  Parameters: {"tag"=>"this"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'this' LIMIT 1[0m
+Completed 500 Internal Server Error in 24ms
+
+NoMethodError (undefined method `posts' for nil:NilClass):
+  app/controllers/articles_controller.rb:27:in `tagged_with'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.0ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:16:20 +0100
+Processing by ArticlesController#tagged_with as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1
+Completed 500 Internal Server Error in 679ms
+
+ActionView::MissingTemplate (Missing template articles/tagged_with, application/tagged_with with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/cblop/rails_projects/cblog-rails2/app/views"
+):
+  app/controllers/articles_controller.rb:29:in `tagged_with'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 148ms (Views: 83.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /admin/articles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:34 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/admin/articles/7/edit" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Processing by Admin::ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."article_id" = 7[0m
+  Rendered admin/articles/_form.html.erb (8.2ms)
+  Rendered admin/articles/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /admin/articles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:16:37 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:16:47 +0100
+Processing by ArticlesController#tagged_with as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template articles/tagged_with, application/tagged_with with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/cblop/rails_projects/cblog-rails2/app/views"
+):
+  app/controllers/articles_controller.rb:29:in `tagged_with'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:22:24 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1[0m
+Completed 500 Internal Server Error in 22ms
+
+NameError (uninitialized constant Tag::Post):
+  app/controllers/articles_controller.rb:29:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (29.5ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.9ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:22:54 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `articles' for #<Tag:0x007f8dc30d3ab0>):
+  app/controllers/articles_controller.rb:27:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (41.2ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.5ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:26:01 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `articles' for nil:NilClass):
+  app/controllers/articles_controller.rb:27:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:26:15 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (undefined method `articles' for #<Tag:0x007f8dc0eea2f0>):
+  app/controllers/articles_controller.rb:27:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.6ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.5ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:26:27 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `name' for :tag:Symbol):
+  app/controllers/articles_controller.rb:26:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:27:26 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1[0m
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `articles' for #<Tag:0x007f8dc2278d30>):
+  app/controllers/articles_controller.rb:27:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.2ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (51.1ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (112.8ms)
+
+
+Started PUT "/admin/articles/7" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Processing by Admin::ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "article"=>{"published"=>"0", "title"=>"Tag test", "content"=>"This tests adding many tags", "tag_list"=>"here, are, many, very silly, tags, and more", "shortUrl"=>""}, "commit"=>"Update Article", "id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'here') LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'are') LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'many') LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'very silly') LIMIT 1
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'tags') LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'and more') LIMIT 1
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE "tags"."name" = 'and more' LIMIT 1[0m
+  [1m[35mSQL (17.7ms)[0m  INSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:28:14 UTC +00:00], ["name", "and more"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:28:14 UTC +00:00]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."article_id" = 7[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'and more' AND "tags"."id" != 6) LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "tags" SET "article_id" = 7, "updated_at" = '2012-06-26 08:28:14.566347' WHERE "tags"."id" = 6[0m
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 107ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:14 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tag/tags" for 127.0.0.1 at 2012-06-26 09:28:20 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"tags"}
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'tags' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `articles' for #<Tag:0x007f8dc222f4a0>):
+  app/controllers/articles_controller.rb:27:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/admin/articles/new" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Processing by Admin::ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  Rendered admin/articles/_form.html.erb (43.7ms)
+  Rendered admin/articles/new.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:28:43 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/articles" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Processing by Admin::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "article"=>{"published"=>"0", "title"=>"More tags", "content"=>"This is another test for the tags, seeing if they work", "tag_list"=>"music, eating, code, free culture", "shortUrl"=>""}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'music') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'music' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00], ["name", "music"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'eating') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE "tags"."name" = 'eating' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00], ["name", "eating"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'code') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'code' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00], ["name", "code"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'free culture') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE "tags"."name" = 'free culture' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00], ["name", "free culture"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Exists (0.2ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'music' AND "tags"."id" != 7) LIMIT 1[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'eating' AND "tags"."id" != 8) LIMIT 1
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'code' AND "tags"."id" != 9) LIMIT 1[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'free culture' AND "tags"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "articles" ("content", "created_at", "published", "shortUrl", "slug", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["content", "This is another test for the tags, seeing if they work"], ["created_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00], ["published", false], ["shortUrl", ""], ["slug", nil], ["title", "More tags"], ["updated_at", Tue, 26 Jun 2012 08:29:12 UTC +00:00]]
+  [1m[35mTag Exists (0.2ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'music' AND "tags"."id" != 7) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "tags" SET "article_id" = 8, "updated_at" = '2012-06-26 08:29:12.246256' WHERE "tags"."id" = 7[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'eating' AND "tags"."id" != 8) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "tags" SET "article_id" = 8, "updated_at" = '2012-06-26 08:29:12.248128' WHERE "tags"."id" = 8[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'code' AND "tags"."id" != 9) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "tags" SET "article_id" = 8, "updated_at" = '2012-06-26 08:29:12.250003' WHERE "tags"."id" = 9[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'free culture' AND "tags"."id" != 10) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "tags" SET "article_id" = 8, "updated_at" = '2012-06-26 08:29:12.251407' WHERE "tags"."id" = 10[0m
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 40ms (ActiveRecord: 15.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /admin/articles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:29:12 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tag/music" for 127.0.0.1 at 2012-06-26 09:29:18 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"music"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'music' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `articles' for #<Tag:0x007f8dc30bedb8>):
+  app/controllers/articles_controller.rb:27:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/tag/music" for 127.0.0.1 at 2012-06-26 09:32:59 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"music"}
+Completed 500 Internal Server Error in 6ms
+
+ArgumentError (Unknown key: through):
+  app/models/tag.rb:3:in `<class:Tag>'
+  app/models/tag.rb:1:in `<top (required)>'
+  app/controllers/articles_controller.rb:26:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.1ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)
+
+
+Started GET "/tag/music" for 127.0.0.1 at 2012-06-26 09:40:44 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"music"}
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE "tags"."name" = 'music' LIMIT 1
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `articles' for #<Tag:0x007f8dc31fcdd8>):
+  app/controllers/articles_controller.rb:26:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (42.7ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.9ms)
+
+
+Started GET "/tag/music" for 127.0.0.1 at 2012-06-26 09:42:41 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"music"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'music' LIMIT 1[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "articles_tags" ON "articles"."id" = "articles_tags"."article_id" WHERE "articles_tags"."tag_id" = 7
+SQLite3::SQLException: no such table: articles_tags: SELECT "articles".* FROM "articles" INNER JOIN "articles_tags" ON "articles"."id" = "articles_tags"."article_id" WHERE "articles_tags"."tag_id" = 7
+Completed 500 Internal Server Error in 208ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles_tags: SELECT "articles".* FROM "articles" INNER JOIN "articles_tags" ON "articles"."id" = "articles_tags"."article_id" WHERE "articles_tags"."tag_id" = 7):
+  app/controllers/articles_controller.rb:28:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.6ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 210ms (Views: 46.7ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /admin/articles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:02 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:03 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:03 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/admin/articles/8" for 127.0.0.1 at 2012-06-26 09:43:06 +0100
+Processing by Admin::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.9ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 8]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 24ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:43:06 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+  Rendered admin/articles/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /articles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:07 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/admin/articles/7" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Processing by Admin::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 7]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:09 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/articles/new" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Processing by Admin::ArticlesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  Rendered admin/articles/_form.html.erb (6.5ms)
+  Rendered admin/articles/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /admin/articles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:10 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:11 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/articles" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Processing by Admin::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "article"=>{"published"=>"0", "title"=>"Testing tags", "content"=>"This is a tag test", "tag_list"=>"tags, test, music, free culture", "shortUrl"=>""}, "commit"=>"Create Article"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'tags') LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'test') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.2ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'test' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:43:34 UTC +00:00], ["name", "test"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:43:34 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'music') LIMIT 1[0m
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'free culture') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'tags' AND "tags"."id" != 5) LIMIT 1
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'test' AND "tags"."id" != 11) LIMIT 1[0m
+  [1m[35mTag Exists (0.1ms)[0m  SELECT 1 FROM "tags" WHERE ("tags"."name" = 'music' AND "tags"."id" != 7) LIMIT 1
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'free culture' AND "tags"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "articles" ("content", "created_at", "published", "shortUrl", "slug", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "This is a tag test"], ["created_at", Tue, 26 Jun 2012 08:43:34 UTC +00:00], ["published", false], ["shortUrl", ""], ["slug", nil], ["title", "Testing tags"], ["updated_at", Tue, 26 Jun 2012 08:43:34 UTC +00:00]]
+  [1m[36mTag Exists (0.2ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'tags' AND "tags"."id" != 5) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "tags" SET "article_id" = 9, "updated_at" = '2012-06-26 08:43:34.283976' WHERE "tags"."id" = 5
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'test' AND "tags"."id" != 11) LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  UPDATE "tags" SET "article_id" = 9, "updated_at" = '2012-06-26 08:43:34.286522' WHERE "tags"."id" = 11
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'music' AND "tags"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "tags" SET "article_id" = 9, "updated_at" = '2012-06-26 08:43:34.288289' WHERE "tags"."id" = 7
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE ("tags"."name" = 'free culture' AND "tags"."id" != 10) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "tags" SET "article_id" = 9, "updated_at" = '2012-06-26 08:43:34.289783' WHERE "tags"."id" = 10
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 36ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+  Rendered admin/articles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:34 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-26 09:43:39 +0100
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered layouts/_head.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_disqus.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.4ms)
+  Rendered articles/_article.html.erb (0.7ms)
+  Rendered articles/_article.html.erb (0.8ms)
+  Rendered articles/_article.html.erb (0.5ms)
+  Rendered articles/index.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/static/css/screen.css" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/static/css/screen.css"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cblop/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /admin/articles.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:43:40 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tag/music" for 127.0.0.1 at 2012-06-26 09:43:42 +0100
+Processing by ArticlesController#tags as HTML
+  Parameters: {"tag"=>"music"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."name" = 'music' LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "articles_tags" ON "articles"."id" = "articles_tags"."article_id" WHERE "articles_tags"."tag_id" = 7
+SQLite3::SQLException: no such table: articles_tags: SELECT "articles".* FROM "articles" INNER JOIN "articles_tags" ON "articles"."id" = "articles_tags"."article_id" WHERE "articles_tags"."tag_id" = 7
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles_tags: SELECT "articles".* FROM "articles" INNER JOIN "articles_tags" ON "articles"."id" = "articles_tags"."article_id" WHERE "articles_tags"."tag_id" = 7):
+  app/controllers/articles_controller.rb:28:in `tags'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 84ms (Views: 15.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:32 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/admin/articles/9" for 127.0.0.1 at 2012-06-26 09:45:36 +0100
+Processing by Admin::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9
+SQLite3::SQLException: no such table: articles_tags: SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 39ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles_tags: SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9):
+  app/controllers/admin/articles_controller.rb:72:in `destroy'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" [0m
+  Rendered admin/articles/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /admin/articles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:43 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:44 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:44 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:44 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:44 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/articles/new" for 127.0.0.1 at 2012-06-26 09:45:45 +0100
+Processing by Admin::ArticlesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  Rendered admin/articles/_form.html.erb (5.8ms)
+  Rendered admin/articles/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /admin/articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:45:46 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/articles" for 127.0.0.1 at 2012-06-26 09:46:17 +0100
+Processing by Admin::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "article"=>{"published"=>"0", "title"=>"Another tag test", "content"=>"Chthulu fgtagn!", "tag_list"=>"help, me, mummy", "shortUrl"=>""}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'help') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.2ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'help' LIMIT 1
+  [1m[36mSQL (31.8ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00], ["name", "help"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (name = 'me') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mTag Exists (0.1ms)[0m  [1mSELECT 1 FROM "tags" WHERE "tags"."name" = 'me' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00], ["name", "me"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (name = 'mummy') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Exists (0.9ms)[0m  SELECT 1 FROM "tags" WHERE "tags"."name" = 'mummy' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tags" ("article_id", "created_at", "name", "post_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["article_id", nil], ["created_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00], ["name", "mummy"], ["post_id", nil], ["updated_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "articles" ("content", "created_at", "published", "shortUrl", "slug", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["content", "Chthulu fgtagn!"], ["created_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00], ["published", false], ["shortUrl", ""], ["slug", nil], ["title", "Another tag test"], ["updated_at", Tue, 26 Jun 2012 08:46:17 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "articles_tags" ("article_id", "tag_id") VALUES (10, 12)[0m
+SQLite3::SQLException: no such table: articles_tags: INSERT INTO "articles_tags" ("article_id", "tag_id") VALUES (10, 12)
+  [1m[35m (0.5ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 74ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles_tags: INSERT INTO "articles_tags" ("article_id", "tag_id") VALUES (10, 12)):
+  app/controllers/admin/articles_controller.rb:42:in `block in create'
+  app/controllers/admin/articles_controller.rb:41:in `create'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120623083346)
+Migrating to CreateArticles (20120623084101)
+Migrating to RemoveEmailFromUsers (20120624071347)
+Migrating to AddPasswordDigestToUsers (20120624083615)
+Migrating to AddIndexToUsersName (20120624092710)
+Migrating to AddRememberTokenToUsers (20120625082646)
+Migrating to RemoveTagsFromArticles (20120625104529)
+Migrating to RemovePostFromTags (20120625104823)
+Migrating to AddArticleIdToTags (20120625104939)
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("articles")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tags")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_tags_on_post_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_name')[0m
+
+
+Started GET "/admin/" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Processing by Admin::ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" 
+  Rendered admin/articles/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 52ms (Views: 16.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /admin/articles.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /admin/articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-26 09:47:06 +0100
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/admin/articles/9" for 127.0.0.1 at 2012-06-26 09:47:09 +0100
+Processing by Admin::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9
+SQLite3::SQLException: no such table: articles_tags: SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9
+  [1m[36m (2.8ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles_tags: SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9):
+  app/controllers/admin/articles_controller.rb:72:in `destroy'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.6ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started DELETE "/admin/articles/9" for 127.0.0.1 at 2012-06-26 09:52:46 +0100
+Processing by Admin::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/fBdQ9q0ASfLXSJelMDOP0YFtinhphxrbQR2yyrCfWE=", "id"=>"9"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'djnhAZVkTb5EVd3GOa1VFA' LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9[0m
+SQLite3::SQLException: no such table: articles_tags: SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles_tags: SELECT "tags".* FROM "tags" INNER JOIN "articles_tags" ON "tags"."id" = "articles_tags"."tag_id" WHERE "articles_tags"."article_id" = 9):
+  app/controllers/admin/articles_controller.rb:72:in `destroy'
+
+
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/cblop/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)

@@ -9,7 +9,7 @@ CblogRails2::Application.routes.draw do
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
 
-  match '/tag/:tag' => 'articles#tagged_with'
+  match '/tag/:tag' => 'articles#tags'
 
   namespace :admin do
       resources :articles

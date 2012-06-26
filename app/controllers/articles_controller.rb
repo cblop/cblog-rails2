@@ -22,13 +22,10 @@ class ArticlesController < ApplicationController
     end
   end
   
-  def tagged_with
-    @articles = Article.by_tag(params[:tag])
+  def tags
+    @articles = Tag.find_by_name(params[:tag]).articles
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @articles }
-    end
+    render @articles => '/articles/index'
   end
 
 end
