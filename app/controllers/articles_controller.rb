@@ -25,7 +25,10 @@ class ArticlesController < ApplicationController
   def tags
     @articles = Tag.find_by_name(params[:tag]).articles
 
-    render @articles => '/articles/index'
+    respond_to do |format|
+      format.html { render :template => 'articles/index' }# show.html.erb
+      format.json { render json: @article }
+    end
   end
 
 end
